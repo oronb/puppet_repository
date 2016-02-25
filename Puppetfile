@@ -7,6 +7,9 @@ mod 'golja/influxdb', '0.1.2'
 mod 'puppetlabs/firewall'
 
 # Modules from Github using various references
+
+mod 'artifactory_i'
+  :git => 'https://github.com/oronb/artifactory_i.git'
 mod 'profiles',
   :git => 'git://github.com/glarizza/puppet-profiles',
   :ref => '576552574f4c24b0253760d7632fee27ed07ec78'
