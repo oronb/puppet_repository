@@ -8,7 +8,7 @@ mod 'puppetlabs/firewall'
 
 # Modules from Github using various references
 
-mod 'artifactory_i'
+mod 'artifactory_i',
   :git => 'https://github.com/oronb/artifactory_i.git'
   
 mod 'profiles',
