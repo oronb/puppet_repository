@@ -10,6 +10,7 @@ mod 'puppetlabs/firewall'
 
 mod 'artifactory_i'
   :git => 'https://github.com/oronb/artifactory_i.git'
+  
 mod 'profiles',
   :git => 'git://github.com/glarizza/puppet-profiles',
   :ref => '576552574f4c24b0253760d7632fee27ed07ec78'
