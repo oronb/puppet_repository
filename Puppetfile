@@ -14,6 +14,10 @@ mod 'cluster',
   :git => 'https://github.com/oronb/puppet_modules.git',
   :ref => 'cluster'
   
+mod 'ansible',
+  :git => 'https://github.com/nvogel/puppet-ansible',
+  :ref => '3.0.0'
+  
 ## Grafana Dependencies
 mod 'docker',
   :git => 'https://github.com/garethr/garethr-docker.git',
