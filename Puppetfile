@@ -4,6 +4,7 @@ forge "http://forge.puppetlabs.com"
 mod "puppetlabs/apache"
 mod "puppetlabs/ntp"
 mod "puppetlabs/tomcat"
+mod "nvogel/ansible"
 # Modules from Github using various references
 
 mod 'artifactory',
@@ -13,10 +14,6 @@ mod 'artifactory',
 mod 'cluster',
   :git => 'https://github.com/oronb/puppet_modules.git',
   :ref => 'cluster'
-  
-mod 'ansible',
-  :git => 'https://github.com/nvogel/puppet-ansible',
-  :ref => '3.0.0'
   
 ## Grafana Dependencies
 mod 'docker',
