@@ -45,13 +45,14 @@ node oron-puppet-client-1 {
   class { 'ansible':
   ensure => node,
   master => 'oron-puppet-master'
+  }
 }
 
 node oron-puppet-master {
   class { 'ansible':
   ensure => master
+  }
 }
-
 node oron-puppet-client-2 {
   artifactory::artifact {'download-artifact':
       user          => 'admin',
