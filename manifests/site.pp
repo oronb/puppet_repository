@@ -21,7 +21,7 @@
 File { backup => 'main' }
 
 # Kill deprecation warnings in PE 3.3:
-Package { allow_virtual => false }
+#Package { allow_virtual => false }
 
 # DEFAULT NODE
 # Node definitions in this file are merged with node data from the console. See
