@@ -3,9 +3,7 @@ forge "http://forge.puppetlabs.com"
 # Modules from the Puppet Forge
 mod "puppetlabs/apache"
 mod "puppetlabs/ntp"
-mod 'golja/influxdb', '0.1.2'
-mod 'puppetlabs/firewall'
-
+mod "puppetlabs/tomcat"
 # Modules from Github using various references
 
 mod 'artifactory',
@@ -15,12 +13,6 @@ mod 'artifactory',
 mod 'cluster',
   :git => 'https://github.com/oronb/puppet_modules.git',
   :ref => 'cluster'
-  
-mod 'apache',
-  :git => 'https://github.com/puppetlabs/puppetlabs-apache.git',
-
-mod 'tomcat',
-  :git => 'https://github.com/puppetlabs/puppetlabs-tomcat.git',
   
 ## Grafana Dependencies
 mod 'docker',
@@ -39,5 +31,3 @@ mod 'jenkins',
 mod 'java',
   :git => 'https://github.com/puppetlabs/puppetlabs-java.git',
   :tag => '1.4.1'
-
-
