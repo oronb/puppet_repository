@@ -41,16 +41,27 @@ node default {
   #include profiles::puppet_four_changes
 }
 
+node oron-puppet-client-1 {
+  class { 'ansible':
+  ensure => node,
+  master => 'oron-puppet-master'
+}
+
+node oron-puppet-master {
+  class { 'ansible':
+  ensure => master
+}
+
 node oron-puppet-client-2 {
-        artifactory::artifact {'download-artifact':
-          user          => 'admin',
-          password      => 'password',
-          url           => 'http://oron-puppet-client-1:8081/artifactory',
-          jenkins_build => 'oron',
-          repository    => 'ext-release-local',
-          output        => "/tmp",
-          path          => '/var/www/html',
-          type          => 'zip',
+  artifactory::artifact {'download-artifact':
+      user          => 'admin',
+      password      => 'password',
+      url           => 'http://oron-puppet-client-1:8081/artifactory',
+      jenkins_build => 'oron',
+      repository    => 'ext-release-local', 
+      output        => "/tmp",  
+      path          => '/var/www/html',  
+      type          => 'zip',
        }
 }
 
