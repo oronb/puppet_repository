@@ -17,12 +17,6 @@
 # they run. The Puppet Enterprise console needs this to display file contents
 # and differences.
 
-# Define filebucket 'main':
-filebucket { 'main':
-  server => $::settings::server,
-  path   => false,
-}
-
 # Make filebucket 'main' the default backup location for all File resources:
 File { backup => 'main' }
 
