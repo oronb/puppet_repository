@@ -4,7 +4,7 @@ forge "http://forge.puppetlabs.com"
 mod "puppetlabs/apache"
 mod "puppetlabs/ntp"
 mod "puppetlabs/tomcat"
-mod "nvogel/ansible"
+#mod "nvogel/ansible"
 # Modules from Github using various references
 
 mod 'artifactory',
